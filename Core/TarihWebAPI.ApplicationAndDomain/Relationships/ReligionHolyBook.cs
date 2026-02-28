@@ -27,7 +27,7 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [MaxLength(500)]
         public string WikipediaUrl { get; set; }
 
-        // Navigation Properties
+
         [ForeignKey("ReligionId")]
         public virtual Religion Religion { get; set; }
     }

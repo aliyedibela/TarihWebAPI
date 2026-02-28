@@ -27,7 +27,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [MaxLength(500)]
         public string Notes { get; set; }
 
-        // Navigation Properties
         [ForeignKey("StateId")]
         public virtual State State { get; set; }
     }

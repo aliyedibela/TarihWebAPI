@@ -21,7 +21,7 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [MaxLength(300)]
         public string Notes { get; set; }
 
-        // Navigation Properties
+
         [ForeignKey("WorkId")]
         public virtual Work Work { get; set; }
 

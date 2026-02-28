@@ -30,7 +30,7 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        // Navigation Properties
+
         [ForeignKey("PersonId")]
         public virtual Person Person { get; set; }
 

@@ -21,7 +21,7 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
 
         public ParticipantRole Role { get; set; }
 
-        public bool IsMainParticipant { get; set; }  // Ana taraf mı yardımcı mı?
+        public bool IsMainParticipant { get; set; }  
 
         public bool? IsWinner { get; set; }
 
@@ -30,7 +30,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Column(TypeName = "text")]
         public string Notes { get; set; }
 
-        // Navigation Properties
         [ForeignKey("EventId")]
         public virtual HistoricalEvent Event { get; set; }
 

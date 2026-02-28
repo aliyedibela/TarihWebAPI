@@ -11,8 +11,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Required]
         public Guid TreatyId { get; set; }
 
-        // Nullable: Devlet olmayan imzacılar da olabilir (Papa, bağımsız temsilci vs.)
-        // StateId veya SignatoryPersonId'den en az biri dolu olmalı (validation ile kontrol edilmeli)
         public Guid? StateId { get; set; }
 
         public Guid? SignatoryPersonId { get; set; }
@@ -23,7 +21,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Column(TypeName = "text")]
         public string Notes { get; set; }
 
-        // Navigation Properties
         [ForeignKey("TreatyId")]
         public virtual Treaty Treaty { get; set; }
 

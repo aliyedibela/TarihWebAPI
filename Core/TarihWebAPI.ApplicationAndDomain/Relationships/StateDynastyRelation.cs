@@ -25,7 +25,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        // Navigation Properties
         [ForeignKey("StateId")]
         public virtual State State { get; set; }
 

@@ -18,7 +18,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Required]
         public PersonRelationType RelationType { get; set; }
 
-        // İlişkinin aktif olduğu dönem (opsiyonel)
         public int? StartYear { get; set; }
         public int? EndYear { get; set; }
 

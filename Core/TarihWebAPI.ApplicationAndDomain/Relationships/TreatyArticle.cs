@@ -25,7 +25,6 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [MaxLength(500)]
         public string Summary { get; set; }
 
-        // Navigation Properties
         [ForeignKey("TreatyId")]
         public virtual Treaty Treaty { get; set; }
     }

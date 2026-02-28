@@ -15,17 +15,14 @@ namespace TarihWebAPI.ApplicationAndDomain.Relationships
         [Required]
         public Guid PersonId { get; set; }
 
-        // Enum ile standart rol — EventStateParticipant ile tutarlı
         public PersonEventRole Role { get; set; }
 
-        // Detaylı açıklama için serbest alan ("3. Ordu Komutanı" gibi)
         [MaxLength(300)]
         public string RoleDetail { get; set; }
 
         [Column(TypeName = "text")]
         public string Description { get; set; }
 
-        // Navigation Properties
         [ForeignKey("EventId")]
         public virtual HistoricalEvent Event { get; set; }
 
