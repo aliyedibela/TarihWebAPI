@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Core/TarihWebAPI.ApplicationAndDomain/TarihWebAPI.ApplicationAndDomain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/TarihWebAPI.Persistence/TarihWebAPI.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/TarihWebAPI.WebAPI/TarihWebAPI.WebAPI.csproj" />
+  </Folder>
+</Solution>
